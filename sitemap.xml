@@ -1,68 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Ana sayfa -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Ana sayfa (en yüksek öncelik) -->
   <url>
     <loc>https://burrysoprano.com/</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://burrysoprano.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://burrysoprano.com/" />
   </url>
 
-  <!-- Gizlilik -->
+  <!-- Gizlilik sayfası -->
   <url>
     <loc>https://burrysoprano.com/privacy.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.3</priority>
+    <mobile:mobile/>
   </url>
 
-  <!-- Kısa URL yönlendirmeleri -->
+  <!-- Müzik platform yönlendirmeleri (önemli SEO değeri) -->
   <url>
     <loc>https://burrysoprano.com/spotify</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://burrysoprano.com/apple</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://burrysoprano.com/youtube</loc>
-    <lastmod>2025-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://burrysoprano.com/deezer</loc>
-    <lastmod>2025-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://burrysoprano.com/tidal</loc>
-    <lastmod>2025-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://burrysoprano.com/amazon</loc>
-    <lastmod>2025-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://burrysoprano.com/soundcloud</loc>
-    <lastmod>2025-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+
   <url>
     <loc>https://burrysoprano.com/applemusic</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://burrysoprano.com/youtube</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://burrysoprano.com/deezer</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://burrysoprano.com/tidal</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://burrysoprano.com/amazon</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://burrysoprano.com/soundcloud</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

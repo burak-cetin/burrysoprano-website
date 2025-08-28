@@ -1,8 +1,33 @@
 User-agent: *
 Allow: /
 
+# Önemli sayfaları öne çıkar
+Allow: /privacy.html
+Allow: /spotify
+Allow: /apple
+Allow: /youtube
+Allow: /deezer
+Allow: /tidal
+Allow: /amazon
+Allow: /soundcloud
+Allow: /applemusic
+
+# Gereksiz dosyaları engelle
+Disallow: /*.log$
+Disallow: /tmp/
+Disallow: /.well-known/
+
+# Crawl gecikme (büyük siteler için - siz küçük siteyseniz kaldırılabilir)
+Crawl-delay: 1
+
 # Site haritası
 Sitemap: https://burrysoprano.com/sitemap.xml
 
-# Önemli sayfaları öne çıkar
-Allow: /privacy.html
+# Popüler botlar için özel ayarlar
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
