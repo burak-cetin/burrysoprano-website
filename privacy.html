@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-tr="Gizlilik ve Çerez Politikası | Burry Soprano"
+        data-en="Privacy & Cookie Policy | Burry Soprano">
+    Gizlilik ve Çerez Politikası | Burry Soprano
+  </title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+    h1 { color: #DC143C; }
+    h2 { margin-top: 30px; }
+    a { color: #DC143C; }
+    .language-selector {
+      position: fixed; top: 20px; right: 20px;
+    }
+    .lang-button {
+      padding: 6px 14px; border-radius: 20px; border:1px solid #ccc;
+      background:#000; color:#fff; cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Dil seçici -->
+  <div class="language-selector">
+    <button class="lang-button" id="langButton" onclick="toggleLanguage()" aria-label="Change Language">
+      <span id="langText">TR</span>
+    </button>
+  </div>
+
+  <h1 data-tr="Gizlilik ve Çerez Politikası" data-en="Privacy & Cookie Policy">
+    Gizlilik ve Çerez Politikası
+  </h1>
+  <p data-tr="Bu web sitesini kullanarak, aşağıda açıklanan gizlilik ve çerez kullanımına onay vermiş olursunuz."
+     data-en="By using this website, you agree to the privacy and cookie usage explained below.">
+     Bu web sitesini kullanarak, aşağıda açıklanan gizlilik ve çerez kullanımına onay vermiş olursunuz.
+  </p>
+
+  <h2 data-tr="Toplanan Veriler" data-en="Data Collected">Toplanan Veriler</h2>
+  <ul>
+    <li data-tr="Çerezler (cookies) ve benzeri teknolojiler" data-en="Cookies and similar technologies"></li>
+    <li data-tr="Cihaz ve tarayıcı bilgileri (IP adresi, ekran çözünürlüğü vb.)"
+        data-en="Device and browser information (IP address, screen resolution, etc.)"></li>
+    <li data-tr="Ziyaret edilen sayfalar, tıklamalar, trafik kaynakları"
+        data-en="Visited pages, clicks, traffic sources"></li>
+  </ul>
+
+  <h2 data-tr="Verilerin Kullanım Amacı" data-en="Purpose of Data Usage">Verilerin Kullanım Amacı</h2>
+  <ul>
+    <li data-tr="Sitenin performansını ve kullanıcı deneyimini ölçmek"
+        data-en="Measure site performance and user experience"></li>
+    <li data-tr="Google Analytics aracılığıyla ziyaretçi istatistikleri toplamak"
+        data-en="Collect visitor statistics via Google Analytics"></li>
+    <li data-tr="İsteğe bağlı olarak reklam kişiselleştirmesi yapmak"
+        data-en="Optionally perform ad personalization"></li>
+  </ul>
+
+  <h2 data-tr="Üçüncü Taraflar" data-en="Third Parties">Üçüncü Taraflar</h2>
+  <p data-tr="Google Analytics ve Google Ads gibi üçüncü taraf hizmet sağlayıcılar, çerezler aracılığıyla veri toplayabilir."
+     data-en="Third-party providers such as Google Analytics and Google Ads may collect data via cookies.">
+     Google Analytics ve Google Ads gibi üçüncü taraf hizmet sağlayıcılar, çerezler aracılığıyla veri toplayabilir.
+  </p>
+
+  <h2 data-tr="Kullanıcı Hakları" data-en="User Rights">Kullanıcı Hakları</h2>
+  <p data-tr="Çerez tercihlerinizi çerez ayarları penceresinden yönetebilir veya tarayıcı ayarlarından engelleyebilirsiniz. Ayrıca Google reklam ayarları sayfasından kişiselleştirilmiş reklamları kapatabilirsiniz:"
+     data-en="You can manage your cookie preferences from the cookie settings window or block them in your browser. You can also disable personalized ads from Google's Ad Settings page:">
+     Çerez tercihlerinizi çerez ayarları penceresinden yönetebilir veya tarayıcı ayarlarından engelleyebilirsiniz. Ayrıca Google reklam ayarları sayfasından kişiselleştirilmiş reklamları kapatabilirsiniz:
+     <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>
+  </p>
+
+  <h2 data-tr="İletişim" data-en="Contact">İletişim</h2>
+  <p data-tr="Gizlilik ile ilgili sorularınız için şu adresten bizimle iletişime geçebilirsiniz:"
+     data-en="For privacy-related questions, you can contact us at:">
+     Gizlilik ile ilgili sorularınız için şu adresten bizimle iletişime geçebilirsiniz:
+     <a href="mailto:info@burrysoprano.com">info@burrysoprano.com</a>
+  </p>
+
+  <p><em data-tr="Son güncelleme: 22 Ağustos 2025" data-en="Last updated: 22 August 2025">
+    Son güncelleme: 22 Ağustos 2025
+  </em></p>
+
+  <p>
+    <a href="/" style="color:#DC143C; text-decoration:none;" data-tr="← Ana sayfaya dön" data-en="← Back to homepage">
+      ← Ana sayfaya dön
+    </a>
+  </p>
+
+  <script>
+    const LANGUAGE_KEY = 'burry_soprano_language';
+    let currentLang = localStorage.getItem(LANGUAGE_KEY) || 'tr';
+
+    document.addEventListener('DOMContentLoaded', updateLanguage);
+
+    function toggleLanguage(){
+      currentLang = currentLang === 'tr' ? 'en' : 'tr';
+      localStorage.setItem(LANGUAGE_KEY, currentLang);
+      updateLanguage();
+    }
+    function updateLanguage(){
+      document.getElementById('langText').textContent = currentLang.toUpperCase();
+      document.documentElement.lang = currentLang;
+      document.querySelectorAll('[data-tr][data-en]').forEach(el=>{
+        const txt = el.getAttribute(`data-${currentLang}`);
+        if (txt) el.textContent = txt;
+      });
+    }
+  </script>
+</body>
+</html>

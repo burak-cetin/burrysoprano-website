@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Site haritası
+Sitemap: https://burrysoprano.com/sitemap.xml
+
+# Önemli sayfaları öne çıkar
+Allow: /privacy.html
