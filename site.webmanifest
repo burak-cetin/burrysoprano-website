@@ -1,0 +1,57 @@
+{
+  "name": "Burry Soprano - Official Music Links",
+  "short_name": "Burry Soprano",
+  "description": "Stream Burry Soprano's music on all platforms. 692K Monthly Listeners.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#DC143C",
+  "orientation": "portrait",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Spotify'da Dinle",
+      "short_name": "Spotify",
+      "description": "Burry Soprano'yu Spotify'da dinle",
+      "url": "/spotify",
+      "icons": [
+        {
+          "src": "/favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Apple Music'te Dinle",
+      "short_name": "Apple Music", 
+      "description": "Burry Soprano'yu Apple Music'te dinle",
+      "url": "/apple",
+      "icons": [
+        {
+          "src": "/favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "categories": ["music", "entertainment"]
+}
